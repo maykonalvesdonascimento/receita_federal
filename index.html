@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Receita Federal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1>Receita<span class="container__texto-azul"> Federal</span></h1>
+
+                    <div class="container__campo">
+                        <label class="texto__paragrafo">Renda Mensal</label>
+                        <input class="container__input" id="renda__mensal" type="number" min="1">
+                    </div>
+                    <!--
+                    <div class="container__campo">
+                        <label class="texto__paragrafo">Renda Extra</label>
+                        <input class="container__input" id="renda__extra" type="number" min="1">
+                    </div>
+                -->
+                    
+                    <div class="container__campo">
+                        <label class="texto__paragrafo">Valor gasto nesse ano com Saúde/Educação/Esporte</label>
+                        <input class="container__input" id="gastos" type="number" min="1">
+                    </div>
+                </div>
+                
+                <div class="calcular container__botoes">
+                    <button onclick="calcular()" id="btn-calcular" class="container__botao">Calcular</button>
+                    <button onclick="alternativo()" id="btn-alternativo" class="container__botao">Método alternativo</button>
+                    <button onclick="reiniciar()" id="btn-reiniciar" class="container__botao-desabilitado" >Reiniciar</button>
+                </div>
+
+                <div class="container__texto" id="resultado">
+                    <label class="texto__paragrafo">Valor a Pagar por Mês de Imposto de Renda : A ser calculado</label>
+                </div>
+            </div>
+
+            <img src="./img/leao.png" alt="Imagem de um Leão" class="container__leao" />
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
